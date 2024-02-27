@@ -20,9 +20,9 @@ JobCard.propTypes = {
 
 export default function JobCard({job}) {
   return (
-    <li className='my-[8px] pt-[24px] relative'>
+    <li className='my-[16px] pt-[24px] relative'>
         <img className="rounded-full w-[48px] h-[48px] absolute top-0 left-[24px] z-10" src={job.logo} alt="image description"/>
-        <div className='rounded overflow-hidden'>
+        <div className='rounded overflow-hidden shadow-primary'>
             <div className='bg-white mx-auto border-l-[5px] border-desaturated-dark-cyan p-[24px] pl-[20px]'>
                 <div className='flex items-baseline mt-[8px]'>
                     <span className='text-desaturated-dark-cyan font-bold text-[13px] mr-[29px] py-[10px]'>{job.company}</span>

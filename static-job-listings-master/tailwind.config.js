@@ -23,6 +23,9 @@ export default {
       },
       screens: {
         'desktop': '1440px'
+      },
+      boxShadow: {
+        primary: '0px 15px 20px -5px rgba(13,113,130,0.15)'
       }
     },
   },
