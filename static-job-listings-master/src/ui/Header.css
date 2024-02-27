@@ -1,13 +1,11 @@
 header {
     background-image: url(../assets/images/bg-header-desktop.svg);
     background-repeat: repeat-x;
-    height: 156px;
   }
   
-  @media only screen and (max-width: 640px){
-    header {
-      background-image: url(../assets/images/bg-header-mobile.svg);
-      background-repeat: repeat-x;
-      height: 156px;
-    }
+@media only screen and (max-width: 640px){
+  header {
+    background-image: url(../assets/images/bg-header-mobile.svg);
+    background-repeat: repeat-x;
   }
+}

@@ -1,7 +1,15 @@
 import './Header.css'
+import Loader from './Loader'
+import PropTypes from 'prop-types'
 
-export default function Header() {
+Header.propTypes = {
+  isLoading: PropTypes.bool
+}
+
+export default function Header({isLoading}) {
   return (
-    <header className='bg-primary-dark'></header>
+    <header className='bg-desaturated-dark-cyan h-[156px]'>
+      {isLoading && <Loader/>}
+    </header>
   )
 }

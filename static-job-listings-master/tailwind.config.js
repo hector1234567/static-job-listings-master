@@ -8,15 +8,22 @@ export default {
     fontFamily: {
       sans: 'League Spartan',
     },
-    colors: {
-      'light': '#EFFAFA',
-      'primary': '#63BABA',
-      'primary-dark': '#5CA5A5'
-    },
     extend: {
       minHeight: {
         screen: '100dvh',
       },
+      fontSize: {
+        base: '15px'
+      },
+      colors: {
+        'desaturated-dark-cyan': 'hsl(180, 29%, 50%)',
+        'light-grayish-cyan': 'hsl(180, 52%, 96%)',
+        'dark-grayish-cyan': 'hsl(180, 8%, 52%)',
+        'very-dark-grayish-cyan': 'hsl(180, 14%, 20%)',
+      },
+      screens: {
+        'desktop': '1440px'
+      }
     },
   },
   plugins: [],
