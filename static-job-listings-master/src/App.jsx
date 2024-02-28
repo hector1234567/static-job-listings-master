@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <main className="relative">
+    <main className="relative pb-8">
       <Header isLoading={isLoading}/>
       <div className="flex flex-col">
         {filters.length ? <FiltersBox handleRemoveFilter={handleRemoveFilter} filters={filters}/> : ''}

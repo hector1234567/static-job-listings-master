@@ -1,11 +1,11 @@
 export function filterJobsArray(jobArray, filtersArray) {
-    const jobsLoad = [];
+    const jobs = [];
     jobArray.forEach(function(job) {
         filtersArray.forEach(function(filter) {
             if([...job.languages, ...job.tools].includes(filter)) {
-                jobsLoad.push(job);
+                if(!jobs.includes(job)) jobs.push(job);
             }
         })
     })
-    return jobsLoad
+    return jobs
 }
