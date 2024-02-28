@@ -22,7 +22,7 @@ export default {
         'very-dark-grayish-cyan': 'hsl(180, 14%, 20%)',
       },
       screens: {
-        'desktop': '1440px'
+        'desktop': '1160px'
       },
       boxShadow: {
         primary: '0px 15px 20px -5px rgba(13,113,130,0.15)'
