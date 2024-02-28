@@ -17,12 +17,12 @@ JobCard.propTypes = {
         location: PropTypes.string,
         languages: PropTypes.array,
         tools: PropTypes.array,
-    }),
-    handleAddFilter: PropTypes.func
+    })
 }
 
-export default function JobCard({job, handleAddFilter}) {
+export default function JobCard({job}) {
     const {featured, postedAt, contract, location, tools, languages, company, logo} = job;
+    
     return (
         <li className='my-[16px] pt-[24px] relative'>
             <div className='rounded overflow-hidden shadow-small'>
@@ -46,7 +46,7 @@ export default function JobCard({job, handleAddFilter}) {
                     </div>
                     <div className='h-[1px] bg-gray opacity-40 my-[12px] desktop:hidden'></div>
                     <div className='flex gap-[16px] mt-[20px] flex-wrap desktop:mt-0 desktop:items-center desktop:ml-auto'>
-                        {[...tools, ...languages].map((elem, index) => <Label key={index} handleAddFilter={handleAddFilter}>{elem}</Label>)}
+                        {[...tools, ...languages].map((elem, index) => <Label key={index}>{elem}</Label>)}
                     </div>
                 </div>
             </div>

@@ -1,15 +1,14 @@
-import PropTypes from 'prop-types';
 import JobCard from './JobCard';
+import { useJobs } from '../../contexts/JobsContext';
 
-JobsList.propTypes = {
-    jobs: PropTypes.array,
-    handleAddFilter: PropTypes.func
-}
+export default function JobsList() {
+  const {jobs} = useJobs();
+  
+  if(!jobs.length) return null;
 
-export default function JobsList({jobs, handleAddFilter}) {
   return (
     <ul className='w-[327px] desktop:w-[1110px] mx-auto'>
-        {jobs.map((job, index) => <JobCard key={index} handleAddFilter={handleAddFilter} job={job} />)}
+        {jobs.map((job, index) => <JobCard key={index} job={job} />)}
     </ul>
   )
 }
