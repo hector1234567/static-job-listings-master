@@ -8,7 +8,7 @@ Header.propTypes = {
 
 export default function Header({isLoading}) {
   return (
-    <header className='bg-desaturated-dark-cyan h-[156px]'>
+    <header className='bg-primary h-[156px]'>
       {isLoading && <Loader/>}
     </header>
   )

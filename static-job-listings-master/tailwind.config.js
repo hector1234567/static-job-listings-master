@@ -16,16 +16,16 @@ export default {
         base: '15px'
       },
       colors: {
-        'desaturated-dark-cyan': 'hsl(180, 29%, 50%)',
-        'light-grayish-cyan': 'hsl(180, 52%, 96%)',
-        'dark-grayish-cyan': 'hsl(180, 8%, 52%)',
-        'very-dark-grayish-cyan': 'hsl(180, 14%, 20%)',
+        'primary': 'hsl(180, 29%, 50%)',
+        'light': 'hsl(180, 52%, 96%)',
+        'gray': 'hsl(180, 8%, 52%)',
+        'dark': 'hsl(180, 14%, 20%)',
       },
       screens: {
         'desktop': '1160px'
       },
       boxShadow: {
-        primary: '0px 15px 20px -5px rgba(13,113,130,0.15)'
+        'small': '0px 15px 20px -5px rgba(13,113,130,0.15)'
       }
     },
   },
